@@ -16,7 +16,7 @@ test('ReqRes API Automation - Fixed JSONPlaceholder', async ({ request }) => {
 
   expect(createResponse.status()).toBe(201);
   const createData = await createResponse.json();
-  const userId = createData.id;  // Will be 11
+  const userId = createData.id;  
   console.log('Created User ID:', userId);
 
   // -------------------------------
