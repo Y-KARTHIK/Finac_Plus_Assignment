@@ -2,7 +2,7 @@ import { test, expect } from '@playwright/test';
 
 test('ReqRes API Automation - Fixed JSONPlaceholder', async ({ request }) => {
   // -------------------------------
-  // 1️⃣ CREATE USER (POST) ✅ Works
+  // CREATE USER (POST)
   // -------------------------------
   const createResponse = await request.post(
     'https://jsonplaceholder.typicode.com/users',
@@ -20,7 +20,7 @@ test('ReqRes API Automation - Fixed JSONPlaceholder', async ({ request }) => {
   console.log('Created User ID:', userId);
 
   // -------------------------------
-  // 2️⃣ GET EXISTING USER (use ID 1)
+  //  GET EXISTING USER (use ID 1)
   // JSONPlaceholder only has users 1-10
   // -------------------------------
   const getResponse = await request.get('https://jsonplaceholder.typicode.com/users/1');
@@ -30,7 +30,7 @@ test('ReqRes API Automation - Fixed JSONPlaceholder', async ({ request }) => {
   console.log('Fetched User:', getData.name);
 
   // -------------------------------
-  // 3️⃣ UPDATE EXISTING USER (PUT) ✅ Works
+  // UPDATE EXISTING USER (PUT)
   // -------------------------------
   const updateResponse = await request.put(
     'https://jsonplaceholder.typicode.com/users/1',  // Use existing ID
