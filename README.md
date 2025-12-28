@@ -11,20 +11,8 @@ I used **Playwright** with **JavaScript** to automate both the DemoQA Book Store
 
 ------------------------
 
-## Project Structure
-├── tests/ # All test scripts
-│ ├── demoqa-ui.spec.js # UI automation script
-│ ├── reqres-api.spec.js # API automation script
-│ ├── book-details.txt # Output file with book info
-│ └── ... # Other supporting files
-├── playwright.config.js # Playwright settings
-├── package.json # Node dependencies
-├── package-lock.json
-└── .gitignore
 
 
-
-------------------------------------
 
 ## UI Automation – How it works
 
